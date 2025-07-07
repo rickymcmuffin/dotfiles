@@ -89,3 +89,7 @@ mydir=${0:a:h}
 
 source $mydir/zsh/zsh_aliases
 
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux attach-session -t default || tmux new-session -s default
+fi
+
