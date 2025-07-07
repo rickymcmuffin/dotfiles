@@ -1,0 +1,7 @@
+# Aliases file
+
+export PATH="$HOME/.local/bin:$PATH"
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias aptup='sudo apt update && sudo apt upgrade'
