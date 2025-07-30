@@ -4,5 +4,5 @@ export PATH="$HOME/.local/bin:$PATH"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias lt='ll -tr'
+alias lt='ls -ltrF'
 alias aptup='sudo apt update && sudo apt upgrade'
