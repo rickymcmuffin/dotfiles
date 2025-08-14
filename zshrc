@@ -89,7 +89,10 @@ mydir=${0:a:h}
 
 source $mydir/zsh/zsh_aliases
 
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-  tmux attach-session -t default || tmux new-session -s default
-fi
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
+# if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+#   tmux attach-session -t default || tmux new-session -s default
+# fi
 
