@@ -88,6 +88,7 @@ fi
 mydir=${0:a:h}
 
 source $mydir/zsh/zsh_aliases
+source $HOME/.zprofile
 
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word

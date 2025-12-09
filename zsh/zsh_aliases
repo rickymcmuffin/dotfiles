@@ -1,8 +1,10 @@
 # Aliases file
 
 export PATH="$HOME/.local/bin:$PATH"
-alias ll='ls -alF'
+alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
-alias lt='ls -ltrF'
+alias lt='ll -rt'
 alias aptup='sudo apt update && sudo apt upgrade'
+
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
