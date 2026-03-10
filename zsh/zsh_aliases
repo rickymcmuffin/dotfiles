@@ -4,7 +4,7 @@ export PATH="$HOME/.local/bin:$PATH"
 alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
-alias lt='ll -rt'
+alias lt='ls -AlhFrt'
 alias aptup='sudo apt update && sudo apt upgrade'
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
